@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: aliceblue;
 }
 
 .App-logo {
@@ -35,4 +36,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  /* display: inline; */
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
