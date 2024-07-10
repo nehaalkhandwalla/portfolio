@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: aliceblue;
+  background-color: rgb(244, 50, 50);
 }
 
 .App-logo {
@@ -18,7 +18,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav li {
-  /* display: inline; */
+  display: inline;
   margin-right: 10px;
 }
 
@@ -56,4 +56,44 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+
+/* App.css */
+
+.section {
+  padding: 100px 20px;
+  margin-top: 60px; /* Adjust this value to prevent overlap with fixed navbar */
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+
+.section:nth-of-type(even) {
+  background-color: #e2e2e2;
+}
+
+.navbar{
+  position: fixed;
+  background-color: aliceblue;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  /* justify-content: space-evenly; */
+  
+}
+
+.nav-links{
+  display: inline-flex;
+  justify-content: space-evenly;
+  right: auto;
+  width: 50%;
+  border: #000 1px solid;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
 }

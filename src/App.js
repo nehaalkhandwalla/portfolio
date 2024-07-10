@@ -1,49 +1,29 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import './App.css'; // Ensure this path matches your directory structure
+import Navbar from './Navbar'; // Ensure this path matches your directory structure
+import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Experience from './pages/Experience';
 
-const Home = () => {
+const App = () => {
   return (
     <div>
-      <h1>Home</h1>
-      <p>Welcome to my portfolio!</p>
+      <Navbar />
+      <div id="home" className="section">
+        <Home />
+      </div>
+      <div id="projects" className="section">
+        <Projects />
+      </div>
+      <div id="about" className="section">
+        <About />
+      </div>
+      <div id="experience" className="section">
+        <Experience />
+      </div>
     </div>
   );
 };
-
-function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/about">About Me</Link>
-            </li>
-            <li>
-              <Link to="/experience">Experience</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
 
 export default App;
