@@ -107,7 +107,12 @@ nav a:hover {
 body {
   font-family: 'Raleway';
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
+}
+
+.hero-sentence{
+  text-align: left;
+  padding-left: 3em;
 }
 
 .hero {

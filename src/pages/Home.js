@@ -1,23 +1,30 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 
 const Home = () => {
   const textRef = useRef(null);
+  const [prefix, setPrefix] = useState("I AM A");
 
   useEffect(() => {
     const options = {
-      strings: ["STUDENT", "WEB DEVELOPER", "WEB DESIGNER", "HAAFIDHAH", "ICE-SKATER"],
+      strings: ["WEB DESIGNER", "WEB DEVELOPER", "STUDENT", "HAAFIDHAH", "ICE-SKATER"],
       typeSpeed: 50,
       backSpeed: 20,
       backDelay: 2000,
       showCursor: true,
       loop: true,
+      preStringTyped: (arrayPos) => {
+        const currentString = options.strings[arrayPos];
+        const firstLetter = currentString.charAt(0).toLowerCase();
+        const newPrefix = 'aeiou'.includes(firstLetter) ? 'I AM AN' : 'I AM A';
+        setPrefix(newPrefix);
+      },
     };
 
     const typed = new Typed(textRef.current, options);
 
     return () => {
-      // Make sure to destroy Typed instance during cleanup to prevent memory leaks
+      // Cleanup to prevent memory leaks
       typed.destroy();
     };
   }, []);
@@ -26,8 +33,8 @@ const Home = () => {
     <div id="home" className="section">
       <section className="hero">
         <div className="hero-text">
-          <p> 
-            I AM A <span ref={textRef}></span> 
+          <p className='hero-sentence'>
+            {prefix} <span ref={textRef}></span>
           </p>
         </div>
       </section>
