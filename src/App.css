@@ -1,7 +1,19 @@
 .App {
   text-align: center;
-  background-color: rgb(244, 50, 50);
 }
+
+li{
+  cursor: pointer;
+}
+
+a:visited{
+  color: #525f51;
+}
+
+a:link{
+  color: #525f51;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -48,10 +60,14 @@ nav li {
   display: inline;
   margin-right: 10px;
 }
+.me{
+  padding-right: 15em;
+  
+}
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #525f51;
 }
 
 nav a:hover {
@@ -64,24 +80,24 @@ nav a:hover {
 .section {
   padding: 10% 2%;
   /* margin-top: 60px; Adjust this value to prevent overlap with fixed navbar */
-  border-radius: 1%;
   height: fit-content;
 }
 
 .section:nth-of-type(odd) { /* Change background color of odd sections */
-  background-color: #f4f4f4;
+  background-color: #f6f4f4;
 }
 
 .section:nth-of-type(even) {
-  background-color: #e2e2e2;
+  background-color: #525f51;
 }
 
 .navbar{
   position: fixed;
-  background-color: aliceblue;
+  background-color: #f6f4f4;
   top: 0%;
   right: 0%;
   left: 0%;
+  z-index: 1;
   /* justify-content: space-evenly; */
   
 }
@@ -90,8 +106,9 @@ nav a:hover {
   display: inline-flex;
   justify-content: space-evenly;
   right: auto;
-  width: 50%;
-  border: #000 1px solid;
+  left: 0;
+  width: 90%;
+  /* border: #000 1px solid; */
 }
 
 
@@ -110,9 +127,15 @@ body {
   /* color: #ffffff; */
 }
 
+.profile-pic {
+  border-width: 1px;
+  border-color: #525f51;
+  left:0;
+}
+
 .hero-sentence{
   text-align: left;
-  padding-left: 3em;
+  padding-left: 15em;
 }
 
 .hero {
@@ -128,7 +151,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 3em;
-  color: rgb(19, 90, 3);
+  color: #525f51;
 }
 
 .text {
@@ -138,4 +161,24 @@ body {
   marign: 0;
   line-height: 1;
   color: #ffffff;
+}
+
+.socials{
+  /* background-color: #164cb8; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+footer{
+  /* background-color: #282c34; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.footer-section{
+  right: 0;
+
 }

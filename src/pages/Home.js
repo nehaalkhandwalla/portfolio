@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 
+
 const Home = () => {
   const textRef = useRef(null);
   const [prefix, setPrefix] = useState("I AM A");
 
   useEffect(() => {
     const options = {
-      strings: ["WEB DESIGNER", "WEB DEVELOPER", "STUDENT", "HAAFIDHAH", "ICE-SKATER"],
+      strings: ["DEVELOPER", "STUDENT", "HAAFIDHAH", "TUTOR", "ICE-SKATER"],
       typeSpeed: 50,
       backSpeed: 20,
       backDelay: 2000,
@@ -31,6 +32,10 @@ const Home = () => {
 
   return (
     <div id="home" className="section">
+        <div className='profile-pic'>
+            {/* <img src={`${process.env.PUBLIC_URL}/nehaal.png`} alt="Profile" /> */}
+        </div>
+        
       <section className="hero">
         <div className="hero-text">
           <p className='hero-sentence'>
@@ -38,6 +43,7 @@ const Home = () => {
           </p>
         </div>
       </section>
+      
     </div>
   );
 };

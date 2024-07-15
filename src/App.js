@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; // Ensure this path matches your directory structure
 import Navbar from './Navbar'; // Ensure this path matches your directory structure
+import Footer from './Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -21,6 +22,9 @@ const App = () => {
       </div>
       <div id="experience" className="section">
         <Experience />
+      </div>
+      <div id="footer" className="footer-section">
+      <Footer />
       </div>
     </div>
   );
