@@ -62,11 +62,13 @@ nav a:hover {
 /* App.css */
 
 .section {
-  padding: 100px 20px;
-  margin-top: 60px; /* Adjust this value to prevent overlap with fixed navbar */
+  padding: 10% 2%;
+  /* margin-top: 60px; Adjust this value to prevent overlap with fixed navbar */
+  border-radius: 1%;
+  height: fit-content;
 }
 
-.section:nth-of-type(odd) {
+.section:nth-of-type(odd) { /* Change background color of odd sections */
   background-color: #f4f4f4;
 }
 
@@ -96,4 +98,39 @@ nav a:hover {
 .navbar ul {
   list-style-type: none;
   padding: 0;
+}
+
+/* html, body {
+  height: 100%;
+} */
+
+body {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero {
+  /* background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://static.pexels.com/photos/94425/pexels-photo-94425.jpeg") no-repeat;
+  background-size: cover;
+  background-position: 30% 20%; */
+  height: 100%;
+  width: 100%;
+}
+
+.hero-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  color: rgb(19, 90, 3);
+}
+
+.text {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  marign: 0;
+  line-height: 1;
+  color: #ffffff;
 }
