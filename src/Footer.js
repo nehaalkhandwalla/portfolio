@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
     return (
         <footer>
-        <p>Nehaal Khandwalla &copy; 2024 </p>
+        <p> Copyright &copy; Nehaal Khandwalla 2024 </p>
         <section className='socials'>
         <a href="https://www.linkedin.com/in/nehaalkhandwalla" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />

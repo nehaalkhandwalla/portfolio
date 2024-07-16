@@ -134,8 +134,10 @@ body {
 }
 
 .hero-sentence{
+  position: relative;
   text-align: left;
-  padding-left: 15em;
+  margin-left: 40%;
+  padding: 10%;
 }
 
 .hero {
@@ -181,4 +183,63 @@ footer{
 .footer-section{
   right: 0;
 
+}
+
+
+
+/* EXPERIENCE */
+
+.section {
+  margin-bottom: 50px;
+}
+
+.container {
+  position: relative;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.top-section {
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.line {
+  position: absolute;
+  left: 20px;
+  width: 4px;
+  height: 100%;
+  background: #000;
+}
+
+.section .bead {
+  position: absolute;
+  left: -28px;
+  margin-right: 40px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.section .content {
+  margin-left: 40px;
+}
+
+.section.show-me {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-out;
+  margin-left: 10px;
+  /* border: 1px solid #000; */
 }
