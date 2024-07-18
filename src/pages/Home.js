@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div id="home" className="section">
         <div className='profile-pic'>
-            {/* <img src={`${process.env.PUBLIC_URL}/nehaal.png`} alt="Profile" /> */}
+            {/* <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="Profile" /> */}
         </div>
         
       <section className="hero">

@@ -63,8 +63,11 @@ const Experience = () => {
   return (
     <div id="experience" className="section">
       <h1>Experience</h1>
-      <p>Here is my experience...</p>
-      <a href="/cv.pdf" download>Download My CV</a>
+      <p>
+      Download My CV 
+      <a href="/cv.pdf" download> here</a>
+      </p>
+      
 
       <div className="container">
         <div className="top-section">
