@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
+import profileimg from '../nehaal.png';
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
   return (
     <div id="home" className="section">
         <div className='profile-pic'>
-            {/* <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="Profile" /> */}
+            <img src={profileimg} alt="Profile" />
         </div>
         
       <section className="hero">
