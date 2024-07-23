@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["DEVELOPER", "STUDENT", "HAAFIDHAH", "TUTOR", "ICE-SKATER"],
+      strings: ["MUSLIM", "DEVELOPER", "STUDENT", "TUTOR", "ICE-SKATER"],
       typeSpeed: 50,
       backSpeed: 20,
       backDelay: 2000,
